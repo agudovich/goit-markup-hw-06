@@ -160,8 +160,7 @@ p {
   .nav-link:focus {
     color: #404bbf;
   }
-  .nav-header-item:active {
-  }
+
   .nav-link {
     padding: 24px 0;
     display: block;
@@ -276,7 +275,10 @@ p {
 .menu-close-btn:focus {
   background-color: #404bbf;
   border: 0;
-
+  fill: #fff;
+}
+.menu-close-btn:hover .close-icon,
+.menu-close-btn:focus .close-icon {
   fill: #fff;
 }
 .nav-mobile {
@@ -342,6 +344,14 @@ p {
   min-height: 432px;
   margin: 0 auto;
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/bg@2x.jpg');
+  }
+}
+
 .hero-title {
   color: #fff;
   font-weight: 700;
@@ -1057,6 +1067,5 @@ input[type='checkbox']:checked + label .checkbox-icon {
     min-height: 584px;
   }
 }
-@media screen and (min-width: 1158px) {
-}
+
 /* #endregion modal*/
